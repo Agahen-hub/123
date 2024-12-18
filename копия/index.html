@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./globals.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Музыкальный плеер</title>
+</head>
+<div class="frame">
+  <div class="overlap-group-wrapper">
+       <div class="overlap-group">
+          <div class="rectangle"></div>
+          <div class="div"></div>
+          <div class="ellipse"  id="ellipse"></div>
+          <img class="button1" src="./селва.png" alt="Назад" id="back-button" />
+          <img class="button2" src="./справа.png" alt="Вперед" id="forward-button" />
+          <div class="rectangle-2" id="track-info">Трек: Джиган feat. Artik & Asti & Niletto - Худи</div>
+          <img class="button3" src="./image 3.png" alt="Пауза" id="pause-button" />
+
+    
+          <ul class="track-list" id="track-list">
+              <li data-track="1" class="active">
+                  <img src="./худи.jpg" alt="Пластинка 1" />
+                  Джиган feat. Artik & Asti & Niletto - Худи
+              </li>
+              <li data-track="2">
+                  <img src="./лиса.jpg" alt="Пластинка 2" />
+                  DOSHIK - Лиса
+              </li>
+          </ul>
+      </div>
+  </div>
+</div>
+
+<audio id="audio1" src="./Джиган feat. Artik & Asti & Niletto - Худи.mp3" preload="auto"></audio>
+<audio id="audio2" src="./DOSHIK - Лиса.mp3" preload="auto"></audio>
+
+<script src="./script.js"></script>
+</body>
+</html>

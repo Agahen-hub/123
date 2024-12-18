@@ -1,0 +1,139 @@
+.frame {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.frame .overlap-group-wrapper {
+    background-color: #ffffff;
+    width: 1920px;
+    height: 1080px;
+}
+
+.frame .overlap-group {
+    position: relative;
+    height: 1080px;
+    width: 1920px;
+    background-image: url(./bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0px;
+}
+
+.frame .rectangle {
+    width: 868px;
+    height: 464px;
+    top: 308px;
+    left: 325px;
+    background-color: #2b6569;
+    position: absolute;
+    border-radius: 50px;
+}
+
+.frame .div {
+    width: 310px;
+    height: 12px;
+    top: 614px;
+    left: 759px;
+    background-color: #062225;
+    position: absolute;
+    border-radius: 50px;
+}
+
+.frame .ellipse {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 329px;
+    left: 791px;
+    background-color: #143033;
+    border-radius: 125px;
+    background-size: cover; 
+    background-position: center; 
+}
+
+.frame .button1, .frame .button2, .frame .button3 {
+    width: 61px;
+    height: 61px;
+    position: absolute;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.frame .button1 {
+    top: 664px;
+    left: 781px;
+}
+
+.frame .button2 {
+    top: 664px;
+    left: 993px;
+}
+
+.frame .button3 {
+    width: 80px;
+    height: 80px;
+    top: 655px;
+    left: 878px;
+}
+
+.frame .rectangle-2 {
+    width: 340px;
+    height: 50px; /* Уменьшено для текста */
+    top: 325px;
+    left: 358px;
+    background-color: #244546;
+    position: absolute;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.track-list {
+    position: absolute;
+    top: 400px;
+    left: 400px;
+    width: 400px;
+    list-style: none;
+    padding: 0;
+}
+
+.track-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.track-list li img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.track-list li.active {
+    background-color: rgba(255, 255, 255, 0.3); 
+}
+
+
+
+.button1:active  {
+    transform: scale(0.9);
+}
+.button2:active  {
+    transform: scale(0.9);
+}
+.button3:active  {
+    transform: scale(0.9);
+}
+
+
